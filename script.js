@@ -1,7 +1,7 @@
 let precio = 400000
 let cantidad = 0
 let valor = 0
-let let cantidadSpan = document.querySelector(".cantidad");
+let cantidadSpan = document.querySelector(".cantidad");
 
 let precioSpan = document.querySelector(".precio-inicial");
 precioSpan.innerHTML = precio
