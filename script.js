@@ -1,26 +1,22 @@
-precio = 400000
-cantidad = 0
-valor = 0
+let precio = 400000
+let cantidad = 0
+let valor = 0
+let let cantidadSpan = document.querySelector(".cantidad");
 
-precioSpan = document.querySelector(".precio-inicial");
+let precioSpan = document.querySelector(".precio-inicial");
 precioSpan.innerHTML = precio
 
 function total(cantidad){
-    valorSpan = document.querySelector(".valor-total")
+    let valorSpan = document.querySelector(".valor-total")
     valor = cantidad * precio
     valorSpan.innerHTML = valor
 }
-
-
 function mas() {
-    cantidadSpan = document.querySelector(".cantidad");
     cantidad = cantidad + 1
     total(cantidad)
     cantidadSpan.innerHTML = cantidad
 }
-
 function menos() {
-    cantidadSpan = document.querySelector(".cantidad");
     if (cantidad < 1){
         alert("Cantidad debe ser mayor a 0")
         cantidad = 0
