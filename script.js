@@ -2,11 +2,11 @@ let precio = 400000
 let cantidad = 0
 let valor = 0
 
-let precioSpan = document.querySelector(".precio-inicial");
+precioSpan = document.querySelector(".precio-inicial");
 precioSpan.innerHTML = precio
 
 function total(cantidad){
-    let valorSpan = document.querySelector(".valor-total")
+    valorSpan = document.querySelector(".valor-total")
     valor = cantidad * precio
     valorSpan.innerHTML = valor
 }
