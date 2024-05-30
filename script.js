@@ -17,7 +17,7 @@ function mas() {
     cantidadSpan.innerHTML = cantidad
 }
 function menos() {
-    if (cantidad < 1){
+    if (cantidad <= 0){
         alert("Cantidad debe ser mayor a 0")
         cantidad = 0
         total(cantidad)
